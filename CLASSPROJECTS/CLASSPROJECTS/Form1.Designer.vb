@@ -31,11 +31,18 @@ Partial Class Form1
         Label2 = New Label()
         Label1 = New Label()
         GroupBox2 = New GroupBox()
-        Label8 = New Label()
+        Me.lbltotalDue = New TextBox()
+        TextBox10 = New TextBox()
+        Me.lblSubT = New TextBox()
+        Me.lbltax = New TextBox()
+        lblextras = New TextBox()
+        lblDiscount = New TextBox()
+        txtPrice = New TextBox()
+        labelT = New Label()
         Label10 = New Label()
         Label9 = New Label()
         Label7 = New Label()
-        Label6 = New Label()
+        Me.Labe = New Label()
         Label5 = New Label()
         Label4 = New Label()
         GroupBox3 = New GroupBox()
@@ -52,13 +59,6 @@ Partial Class Form1
         BtnReset = New Button()
         Button3 = New Button()
         BtnExit = New Button()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox6 = New TextBox()
-        TextBox7 = New TextBox()
-        TextBox8 = New TextBox()
-        TextBox10 = New TextBox()
-        TextBox11 = New TextBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
@@ -141,18 +141,18 @@ Partial Class Form1
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.Controls.Add(TextBox11)
+        GroupBox2.Controls.Add(Me.lbltotalDue)
         GroupBox2.Controls.Add(TextBox10)
-        GroupBox2.Controls.Add(TextBox8)
-        GroupBox2.Controls.Add(TextBox7)
-        GroupBox2.Controls.Add(TextBox6)
-        GroupBox2.Controls.Add(TextBox5)
-        GroupBox2.Controls.Add(TextBox4)
-        GroupBox2.Controls.Add(Label8)
+        GroupBox2.Controls.Add(Me.lblSubT)
+        GroupBox2.Controls.Add(Me.lbltax)
+        GroupBox2.Controls.Add(lblextras)
+        GroupBox2.Controls.Add(lblDiscount)
+        GroupBox2.Controls.Add(txtPrice)
+        GroupBox2.Controls.Add(labelT)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(Label9)
         GroupBox2.Controls.Add(Label7)
-        GroupBox2.Controls.Add(Label6)
+        GroupBox2.Controls.Add(Me.Labe)
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Controls.Add(Label4)
         GroupBox2.Location = New Point(24, 170)
@@ -162,68 +162,122 @@ Partial Class Form1
         GroupBox2.TabStop = False
         GroupBox2.Text = "Sales Information"
         ' 
-        ' Label8
+        ' lbltotalDue
         ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(16, 258)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(41, 15)
-        Label8.TabIndex = 6
-        Label8.Text = "Label8"
+        Me.lbltotalDue.Location = New Point(74, 255)
+        Me.lbltotalDue.Name = "lbltotalDue"
+        Me.lbltotalDue.ReadOnly = True
+        Me.lbltotalDue.Size = New Size(196, 23)
+        Me.lbltotalDue.TabIndex = 13
+        ' 
+        ' TextBox10
+        ' 
+        TextBox10.Location = New Point(76, 219)
+        TextBox10.Name = "TextBox10"
+        TextBox10.Size = New Size(194, 23)
+        TextBox10.TabIndex = 12
+        ' 
+        ' lblSubT
+        ' 
+        Me.lblSubT.Location = New Point(74, 182)
+        Me.lblSubT.Name = "lblSubT"
+        Me.lblSubT.ReadOnly = True
+        Me.lblSubT.Size = New Size(196, 23)
+        Me.lblSubT.TabIndex = 11
+        ' 
+        ' lbltax
+        ' 
+        Me.lbltax.Location = New Point(74, 139)
+        Me.lbltax.Name = "lbltax"
+        Me.lbltax.ReadOnly = True
+        Me.lbltax.Size = New Size(196, 23)
+        Me.lbltax.TabIndex = 10
+        ' 
+        ' lblextras
+        ' 
+        lblextras.Location = New Point(63, 93)
+        lblextras.Name = "lblextras"
+        lblextras.ReadOnly = True
+        lblextras.Size = New Size(207, 23)
+        lblextras.TabIndex = 9
+        ' 
+        ' lblDiscount
+        ' 
+        lblDiscount.Location = New Point(74, 55)
+        lblDiscount.Name = "lblDiscount"
+        lblDiscount.ReadOnly = True
+        lblDiscount.Size = New Size(196, 23)
+        lblDiscount.TabIndex = 8
+        ' 
+        ' txtPrice
+        ' 
+        txtPrice.Location = New Point(63, 18)
+        txtPrice.Name = "txtPrice"
+        txtPrice.Size = New Size(207, 23)
+        txtPrice.TabIndex = 7
+        ' 
+        ' labelT
+        ' 
+        labelT.AutoSize = True
+        labelT.Location = New Point(16, 258)
+        labelT.Name = "labelT"
+        labelT.Size = New Size(60, 15)
+        labelT.TabIndex = 6
+        labelT.Text = "Total Due:"
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Location = New Point(16, 218)
         Label10.Name = "Label10"
-        Label10.Size = New Size(47, 15)
+        Label10.Size = New Size(54, 15)
         Label10.TabIndex = 5
-        Label10.Text = "Label10"
+        Label10.Text = "Trade-in:"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
         Label9.Location = New Point(16, 180)
         Label9.Name = "Label9"
-        Label9.Size = New Size(41, 15)
+        Label9.Size = New Size(61, 15)
         Label9.TabIndex = 4
-        Label9.Text = "Label9"
+        Label9.Text = "Sub-Total:"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Location = New Point(16, 143)
         Label7.Name = "Label7"
-        Label7.Size = New Size(41, 15)
+        Label7.Size = New Size(53, 15)
         Label7.TabIndex = 3
-        Label7.Text = "Label7"
+        Label7.Text = "SalesTax:"
         ' 
-        ' Label6
+        ' Labe
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(16, 99)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(41, 15)
-        Label6.TabIndex = 2
-        Label6.Text = "Label6"
+        Me.Labe.AutoSize = True
+        Me.Labe.Location = New Point(16, 99)
+        Me.Labe.Name = "Labe"
+        Me.Labe.Size = New Size(40, 15)
+        Me.Labe.TabIndex = 2
+        Me.Labe.Text = "Extras:"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Location = New Point(16, 63)
         Label5.Name = "Label5"
-        Label5.Size = New Size(41, 15)
+        Label5.Size = New Size(57, 15)
         Label5.TabIndex = 1
-        Label5.Text = "Label5"
+        Label5.Text = "Discount:"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Location = New Point(16, 23)
         Label4.Name = "Label4"
-        Label4.Size = New Size(41, 15)
+        Label4.Size = New Size(36, 15)
         Label4.TabIndex = 0
-        Label4.Text = "Label4"
+        Label4.Text = "Price:"
         ' 
         ' GroupBox3
         ' 
@@ -371,55 +425,6 @@ Partial Class Form1
         BtnExit.Text = "E&xit"
         BtnExit.UseVisualStyleBackColor = True
         ' 
-        ' TextBox4
-        ' 
-        TextBox4.Location = New Point(63, 18)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(207, 23)
-        TextBox4.TabIndex = 7
-        ' 
-        ' TextBox5
-        ' 
-        TextBox5.Location = New Point(74, 55)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(196, 23)
-        TextBox5.TabIndex = 8
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Location = New Point(63, 93)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(207, 23)
-        TextBox6.TabIndex = 9
-        ' 
-        ' TextBox7
-        ' 
-        TextBox7.Location = New Point(74, 139)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(196, 23)
-        TextBox7.TabIndex = 10
-        ' 
-        ' TextBox8
-        ' 
-        TextBox8.Location = New Point(74, 182)
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(196, 23)
-        TextBox8.TabIndex = 11
-        ' 
-        ' TextBox10
-        ' 
-        TextBox10.Location = New Point(76, 219)
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(194, 23)
-        TextBox10.TabIndex = 12
-        ' 
-        ' TextBox11
-        ' 
-        TextBox11.Location = New Point(74, 255)
-        TextBox11.Name = "TextBox11"
-        TextBox11.Size = New Size(196, 23)
-        TextBox11.TabIndex = 13
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -453,7 +458,7 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents labelT As Label
     Friend WithEvents lblSubtotal As Label
     Friend WithEvents radUndercoat As RadioButton
     Friend WithEvents RadTouchUp As RadioButton
@@ -478,12 +483,12 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents lblTotal As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents lblextras As TextBox
+    Friend WithEvents lblDiscount As TextBox
+    Friend WithEvents txtPrice As TextBox
 
 End Class
