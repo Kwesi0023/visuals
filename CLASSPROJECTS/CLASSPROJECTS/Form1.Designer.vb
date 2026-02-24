@@ -31,18 +31,10 @@ Partial Class Form1
         Label2 = New Label()
         Label1 = New Label()
         GroupBox2 = New GroupBox()
-        Me.lbltotalDue = New TextBox()
-        TextBox10 = New TextBox()
-        Me.lblSubT = New TextBox()
-        Me.lbltax = New TextBox()
-        lblextras = New TextBox()
-        lblDiscount = New TextBox()
-        txtPrice = New TextBox()
         labelT = New Label()
         Label10 = New Label()
         Label9 = New Label()
         Label7 = New Label()
-        Me.Labe = New Label()
         Label5 = New Label()
         Label4 = New Label()
         GroupBox3 = New GroupBox()
@@ -140,11 +132,7 @@ Partial Class Form1
         Label1.Text = "&Lot Number:"
         ' 
         ' GroupBox2
-        ' 
-        GroupBox2.Controls.Add(Me.lbltotalDue)
-        GroupBox2.Controls.Add(TextBox10)
-        GroupBox2.Controls.Add(Me.lblSubT)
-        GroupBox2.Controls.Add(Me.lbltax)
+        '
         GroupBox2.Controls.Add(lblextras)
         GroupBox2.Controls.Add(lblDiscount)
         GroupBox2.Controls.Add(txtPrice)
@@ -152,7 +140,6 @@ Partial Class Form1
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(Label9)
         GroupBox2.Controls.Add(Label7)
-        GroupBox2.Controls.Add(Me.Labe)
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Controls.Add(Label4)
         GroupBox2.Location = New Point(24, 170)
@@ -162,36 +149,12 @@ Partial Class Form1
         GroupBox2.TabStop = False
         GroupBox2.Text = "Sales Information"
         ' 
-        ' lbltotalDue
-        ' 
-        Me.lbltotalDue.Location = New Point(74, 255)
-        Me.lbltotalDue.Name = "lbltotalDue"
-        Me.lbltotalDue.ReadOnly = True
-        Me.lbltotalDue.Size = New Size(196, 23)
-        Me.lbltotalDue.TabIndex = 13
-        ' 
         ' TextBox10
         ' 
         TextBox10.Location = New Point(76, 219)
         TextBox10.Name = "TextBox10"
         TextBox10.Size = New Size(194, 23)
         TextBox10.TabIndex = 12
-        ' 
-        ' lblSubT
-        ' 
-        Me.lblSubT.Location = New Point(74, 182)
-        Me.lblSubT.Name = "lblSubT"
-        Me.lblSubT.ReadOnly = True
-        Me.lblSubT.Size = New Size(196, 23)
-        Me.lblSubT.TabIndex = 11
-        ' 
-        ' lbltax
-        ' 
-        Me.lbltax.Location = New Point(74, 139)
-        Me.lbltax.Name = "lbltax"
-        Me.lbltax.ReadOnly = True
-        Me.lbltax.Size = New Size(196, 23)
-        Me.lbltax.TabIndex = 10
         ' 
         ' lblextras
         ' 
@@ -251,15 +214,7 @@ Partial Class Form1
         Label7.Size = New Size(53, 15)
         Label7.TabIndex = 3
         Label7.Text = "SalesTax:"
-        ' 
-        ' Labe
-        ' 
-        Me.Labe.AutoSize = True
-        Me.Labe.Location = New Point(16, 99)
-        Me.Labe.Name = "Labe"
-        Me.Labe.Size = New Size(40, 15)
-        Me.Labe.TabIndex = 2
-        Me.Labe.Text = "Extras:"
+
         ' 
         ' Label5
         ' 
